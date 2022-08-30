@@ -20,7 +20,7 @@ function Header() {
         <div className='flex items-center justify-center md:w-1/5'>
             <Link href="/">
                 <div className='logoIcon'>
-                    <Image src="/../public/logobk.png" layout='fill' objectFit='contain' />
+                    <Image src="/../public/logobk.png" layout='fill' objectFit='contain' priority/>
                 </div>
             </Link>
         </div>

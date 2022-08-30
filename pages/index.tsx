@@ -1,7 +1,6 @@
 import { Tab } from '@headlessui/react'
 import type { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import Header from '../components/Header'
 import Landing from '../components/Landing'
 
@@ -9,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <div className="">
       <Head>
-        <title>Darela Chopp</title>
+        <title>Darela Chopp Express</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -21,7 +20,7 @@ const Home: NextPage = () => {
       <section className="relative z-40 -mt-[130vh] min-h-screen bg-[#1B1B1B]">
         <div className="space-y-10 py-16">
       <h1 className="text-center text-4xl font-medium tracking-wide text-white md:text-5xl">
-            Chopes
+            Marcas de Chopes
           </h1>
 
           <Tab.Group>
@@ -52,6 +51,7 @@ const Home: NextPage = () => {
 
           </div>
       </section>
+
     </div>
   )
 }

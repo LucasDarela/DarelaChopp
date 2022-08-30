@@ -19,14 +19,14 @@ function Landing() {
             </h1>
 
             <div className='space-x-6'>
-                <Button title="Faça seu Pedido"/>
+                <Button title="Peça Já"/>
                 <a className="link block pt-4 pl-2 lg:inline">Saiba Mais</a>
             </div>
         </div>
 
         <div className="relative  h-[450px] w-[450px] transition-all duration-500 
         md:inline lg:h-[550px] lg:w-[500px]">
-            <Image src="/chopp.png" layout="fill" objectFit="contain"/>
+            <Image src="/chopp.png" layout="fill" objectFit="contain" priority/>
 
         </div>
     </section>
