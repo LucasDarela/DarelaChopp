@@ -1,11 +1,14 @@
+import { IoGridOutline } from "react-icons/io5"
+
 export default {
   name: 'category',
-  title: 'Category',
+  title: 'Categoria',
+  icon: IoGridOutline,
   type: 'document',
   fields: [
     {
       name: 'title',
-      title: 'Title',
+      title: 'Tipo de Chope',
       type: 'string',
     },
     {
@@ -16,22 +19,6 @@ export default {
         source: 'title',
         maxLength: 96,
       },
-    },
-    {
-      name: 'description',
-      title: 'Description',
-      type: 'text',
-    },
-    {
-      name: 'parents',
-      title: 'Parent categories',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: [{type: 'category'}],
-        },
-      ],
     },
   ],
 }

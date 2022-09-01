@@ -2,8 +2,10 @@ import Image from 'next/image'
 import React from 'react'
 import Button from './Button'
 
+
 function Landing() {
   return (
+    
     <section className='sticky top-0 mx-auto flex h-[70vh] max-w-[1350px] items-center justify-btween px-8'>
         <div className='space-y-8'>
 
@@ -15,12 +17,12 @@ function Landing() {
                 <span className="block text-4xl md:text-4xl xl:text-6xl">
                     24 Horas
                 </span>
-
+                
             </h1>
 
             <div className='space-x-6'>
-                <Button title="Peça Já"/>
-                <a className="link block pt-4 pl-2 lg:inline">Saiba Mais</a>
+               <Button title="Peça Já"/>
+                <a className="link block pt-4 pl-2 lg:inline" href='https://www.google.com.br/'>Saiba Mais</a>
             </div>
         </div>
 

@@ -26,8 +26,60 @@
 
     .link {
         @apply relative cursor-pointer text-base font-medium before:absolute 
-        before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0
+        before:inset-x-2 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0
         before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200
-        hover:before:scale-x-100;
+        hover:before:scale-x-50;
     }
+
+    @media (min-width: 1024px) { 
+        .link {
+            @apply before:inset-x-0 hover:before:scale-x-100
+        }
+     }
+
 }
+
+.overlay {
+    
+    max-width: 600px;
+    height: auto;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+.modalContainer {
+    max-width: 100vh;
+    max-height: 100vh;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.516);
+    padding: 10px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 18px 0px rgb(0, 0, 0, 0.75); 
+    text-align: center;
+
+}
+
+.modalRight {
+    width: 100%;
+}
+
+.closeBtn {
+    position: fixed;
+    top: 12px;
+    right: 8px;
+    font-weight: 500;
+}
+

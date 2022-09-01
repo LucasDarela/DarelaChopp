@@ -1,11 +1,14 @@
+import { IoBeerSharp } from "react-icons/io5"
+
 export default {
   name: 'product',
-  title: 'Product',
+  title: 'Produto',
   type: 'document',
+  icon: IoBeerSharp,
   fields: [
     {
       name: 'title',
-      title: 'Title',
+      title: 'Chope',
       type: 'string',
     },
     {
@@ -18,68 +21,39 @@ export default {
       },
     },
     {
-      title: 'Default variant',
-      name: 'defaultProductVariant',
-      type: 'productVariant',
+      name: 'lt',
+      title: 'Litragem',
+      type: 'string',
     },
+
     {
-      title: 'Variants',
-      name: 'variants',
+      name: 'image',
+      title: 'Imagem',
       type: 'array',
-      of: [
-        {
-          title: 'Variant',
-          type: 'productVariant',
-        },
-      ],
-    },
-    {
-      title: 'Tags',
-      name: 'tags',
-      type: 'array',
-      of: [
-        {
-          type: 'string',
-        },
-      ],
+      of: [{ type: "image" }],
       options: {
-        layout: 'tags',
+        hotspot: true,
       },
-    },
+      },
+    
     {
-      name: 'vendor',
-      title: 'Vendor',
+      name: 'category',
+      title: 'Categoria',
       type: 'reference',
-      to: {type: 'vendor'},
+      to: [{type: 'category'}],
+            
     },
     {
-      name: 'blurb',
-      title: 'Blurb',
-      type: 'localeString',
+      name: 'price',
+      title: 'Preço',
+      type: 'number',
     },
     {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: {type: 'category'},
-        },
-      ],
-    },
-    {
-      name: 'body',
-      title: 'Body',
-      type: 'localeBlockContent',
+      name: 'description',
+      title: 'Descrição',
+      type: 'blockContent',
     },
   ],
 
-  preview: {
-    select: {
-      title: 'title',
-      manufactor: 'manufactor.title',
-      media: 'defaultProductVariant.images[0]',
-    },
-  },
+
 }

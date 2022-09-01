@@ -3,6 +3,8 @@ import type { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
 import Header from '../components/Header'
 import Landing from '../components/Landing'
+import Featured from '../components/Featured'
+import WhatsModal from '../components/WhatsModal'
 
 const Home: NextPage = () => {
   return (
@@ -11,10 +13,10 @@ const Home: NextPage = () => {
         <title>Darela Chopp Express</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Header />
 
       <main className='relative h-[200vh] bg-[#E7ECEE]'>
+
         <Landing />
       </main>
       <section className="relative z-40 -mt-[130vh] min-h-screen bg-[#1B1B1B]">
