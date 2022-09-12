@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Landing from "../components/Landing";
-import Diferentials from "../components/Diferentials";
+// import Diferentials from "../components/Diferentials";
 import Chopes from "../components/Chopes";
-import Featured from '../components/Featured'
+// import Featured from '../components/Featured'
 
 
 // interface Props {
@@ -10,18 +10,17 @@ import Featured from '../components/Featured'
 //   products: Product[];
 // }
 
-const Home = ({}) => {
-
+const Home = ({ }) => {
   return (
     <div className="">
-        <Head>
-          <title>Darela Chopp</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <Landing />
-        <Chopes />
+      <Head>
+        <title>Darela Chopp</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Landing />
+      <Chopes />
 
-        {/* <Diferentials />
+      {/* <Diferentials />
         <Featured /> */}
     </div>
   );
