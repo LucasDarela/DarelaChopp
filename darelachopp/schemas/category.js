@@ -3,8 +3,9 @@ import { IoGridOutline } from "react-icons/io5"
 export default {
   name: 'category',
   title: 'Categoria',
-  icon: IoGridOutline,
   type: 'document',
+  icon: IoGridOutline,
+
   fields: [
     {
       name: 'title',

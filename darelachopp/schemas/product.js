@@ -7,53 +7,48 @@ export default {
   icon: IoBeerSharp,
   fields: [
     {
-      name: 'title',
-      title: 'Chope',
-      type: 'string',
+      name: "title",
+      title: "Chope",
+      type: "string",
     },
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
+      name: "litragem",
+      title: "Litragem",
+      type: "string",
+    },
+    {
+      name: "slug",
+      title: "Slug",
+      type: "slug",
       options: {
-        source: 'title',
+        source: "title",
         maxLength: 96,
       },
     },
     {
-      name: 'lt',
-      title: 'Litragem',
-      type: 'string',
-    },
-
-    {
-      name: 'image',
-      title: 'Imagem',
-      type: 'array',
+      name: "image",
+      title: "Imagem",
+      type: "array",
       of: [{ type: "image" }],
       options: {
         hotspot: true,
       },
-      },
-    
-    {
-      name: 'category',
-      title: 'Categoria',
-      type: 'reference',
-      to: [{type: 'category'}],
-            
     },
     {
-      name: 'price',
-      title: 'Preço',
-      type: 'number',
+      name: "category",
+      title: "Categoria",
+      type: "reference",
+      to: [{ type: "category" }],
     },
     {
-      name: 'description',
-      title: 'Descrição',
-      type: 'blockContent',
+      name: "price",
+      title: "Preço",
+      type: "number",
+    },
+    {
+      name: "description",
+      title: "Description",
+      type: "blockContent",
     },
   ],
-
-
-}
+};
